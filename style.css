@@ -158,8 +158,69 @@ body {
 
 }*/
 
+/* СЛАЙДЕР */
+
 .header-2 {
+	position: relative;
 	margin-bottom: 80px;
+}
+
+.slider input[type="radio"] {
+	display: none;
+}
+
+.slider-slides {
+	width: 300%;
+	transition: transform 0.8s ease;
+}
+
+.slider-slides .slide {
+	float: left;
+	width: 880px;
+}
+
+.slider-inner {
+	overflow: hidden;
+}
+
+.slider-controls {
+	text-align: center;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #cccccc;
+}
+
+#slide-1:checked ~ .slider-controls label[for="slide-1"] { 
+    background-color: #666666;
+}
+
+#slide-2:checked ~ .slider-controls label[for="slide-2"] { 
+    background-color: #666666;
+}
+
+#slide-3:checked ~ .slider-controls label[for="slide-3"] { 
+   background-color: #666666;
+}
+
+#slide-1:checked ~ .slider-inner .slider-slides { 
+    transform: translate(0);
+}
+
+#slide-2:checked ~ .slider-inner .slider-slides { 
+    transform: translate(-880px);
+}
+
+#slide-3:checked ~ .slider-inner .slider-slides { 
+    transform: translate(-1760px);
 }
 
 .btn {
@@ -247,7 +308,6 @@ body {
 	height: 249px;
 }
 
-/*	РАЗОБРАТЬСЯ СО СЛАЙДЕРОМ И ЕГО СЛАЙДАМИ
 .slide-3 .slide-title {
 	margin-right: 60px;
 }
@@ -261,7 +321,7 @@ body {
 	width: 333px;
 	height: 319px;
 }
-*/
+
 
 .services {
 	margin-bottom: 60px;
