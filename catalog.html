@@ -4,6 +4,7 @@
 		<title>Каталог товаров NЁRDS</title>
 		<meta charset="utf-8">
 		<link href="style-catalog.css" rel="stylesheet">
+		<link href="symbols-nerds.css" rel="stylesheet">
 		<link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
@@ -15,9 +16,9 @@
 					</div>
 					<nav class="main-navigation">
 						<ul>
-							<li><a href="#">Студия</a></li>
+							<li><a href="index.html">Студия</a></li>
 							<li><a href="#">Клиенты</a></li>
-							<li><a href="#">Магазин</a></li>
+							<li><a href="#" class="active">Магазин</a></li>
 							<li><a href="#">Контакты</a></li>
 						</ul>
 					</nav>
@@ -40,40 +41,62 @@
 							<div class="input-range"></div>
 							<div class="max-range"></div>
 						</div>
-						<p>ОТ <output name="cost-from">0</output> ДО <output name="cost-to">15000</output></p>
+						<p>ОТ<output name="cost-from">0</output>ДО<output name="cost-to">15000</output></p>
 					</fieldset>
 					<fieldset class="grid">
 						<legend class="filters-title">Сетка:</legend>
-						<ul class="grid-checkbox-list">
-							<li><label><input name="grid" type="radio" value="adaptive">Адаптивная</label></li>
-							<li><label><input name="grid" type="radio" value="fixed">Фиксированная</label></li>
-							<li><label><input name="grid" type="radio" value="rubber">Резиновая</label></li>
+						<ul class="grid-radio-list">
+							<li>
+								<input name="grid" type="radio" value="adaptive" id="grid-1">
+								<label for="grid-1">Адаптивная</label>
+							</li>
+							<li>
+								<input name="grid" type="radio" value="fixed" id="grid-2">
+								<label for="grid-2">Фиксированная</label>
+							</li>
+							<li>
+								<input name="grid" type="radio" value="rubber" id="grid-3">
+								<label for="grid-3">Резиновая</label>
+							</li>
 						</ul>
 					</fieldset>
 					<fieldset class="features">
 						<legend class="filters-title">Особенности:</legend>
 						<ul class="grid-features-list">
-							<li><label><input name="features" type="checkbox" value="slider">Слайдер</label></li>
-							<li><label><input name="features" type="checkbox" value="features-block">Блок преимуществ</label></li>
-							<li><label><input name="features" type="checkbox" value="news">Новости</label></li>
-							<li><label><input name="features" type="checkbox" value="gallery">Галерея</label></li>
-							<li><label><input name="features" type="checkbox" value="cart">Корзина</label></li>
+							<li>
+								<input name="features" type="checkbox" value="slider" id="slider">
+								<label for="slider">Слайдер</label>
+							</li>
+							<li>
+								<input name="features" type="checkbox" value="features-block" id="features-block">
+								<label for="features-block">Блок преимуществ</label>
+							</li>
+							<li>
+								<input name="features" type="checkbox" value="news" id="news">
+								<label for="news">Новости</label>
+							</li>
+							<li>
+								<input name="features" type="checkbox" value="gallery" id="gallery">
+								<label for="gallery">Галерея</label>
+							</li>
+							<li>
+								<input name="features" type="checkbox" value="cart" id="cart">
+								<label for="cart">Корзина</label>
+							</li>
 						</ul>
 					</fieldset>
-					<div class="filters-submit">
 						<button type="submit">Показать</button>
-					</div>
 				</form>
 				<div class="items">
 					<div class="sort">
 						<h2 class="sort-title">Сортировать:</h2>
 						<ul class="sort-list">
-							<li><a href="#" class="sort-type">По цене:</a></li>
-							<li><a href="#" class="sort-type">По типу:</a></li>
-							<li><a href="#" class="sort-type">По функционалу:</a></li>
+							<li><a href="#" class="sort-type">По цене</a></li>
+							<li><a href="#" class="sort-type">По типу</a></li>
+							<li><a href="#" class="sort-type">По функционалу</a></li>
 						</ul>
-						<span class="sort-up"></span>
-						<span class="sort-down"></span>
+						<span class="arrow arrow-up"></span>
+						<span class="arrow arrow-down"></span>
 					</div>
 					<div class="items-list clearfix">
 						<article class="item">
