@@ -1,13 +1,12 @@
 body {
 	min-width: 1000px;
 	margin: 0;
-
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 22px;
 	background-color: #ffffff;
 	color: #283136;
 	font-family: "Roboto", "Arial", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
 }
 
 .main-header {
@@ -179,7 +178,6 @@ body {
 	width: 240px;
 	margin: 0;
 	margin-right: 60px;
-	margin-bottom: 470px;
 }
 
 .filters fieldset {
@@ -601,22 +599,209 @@ input[type="checkbox"]:disabled:checked + label::before {
 /* ------------------------------------------------------------ */
 
 
+/* СПИСОК ТОВАРОВ */
+/* ------------------------------------------------------------ */
 .items-list {
-	margin-bottom: ;
+	margin-bottom: 80px;
 }
 
-.item {
-	float: left;
-	margin-right: 80px;
+.item::before {
+	content: "";
+	position: absolute;
+	width: 44px;
+	height: 10px;
+	top: -20px;
+	left: 10px;
+	background: url('img/dots.png') no-repeat;
 }
+
+
+.item {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	border-top: 30px solid #f1f1f1;
+	border-radius: 5px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	float: left;
+}
+
+.item:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.item:last-of-type(2) {
+	margin-bottom: 0;
+}
+
+.item:last-of-type {
+	margin-bottom: 0;
+}
+
+.item:first-of-type {
+	background: url('img/catalog-site-1.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.item:nth-of-type(2) {
+	background: url('img/catalog-site-2.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.item:nth-of-type(3) {
+	background: url('img/catalog-site-3.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.item:nth-of-type(4) {
+	background: url('img/catalog-site-4.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.item:nth-of-type(5) {
+	background: url('img/catalog-site-5.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.item:last-of-type {
+	background: url('img/catalog-site-6.png') no-repeat;
+	background-size: 240px 240px;
+}
+
+.details {
+	padding-top: 32px;
+	padding-bottom: 30px;
+	background-color: #ffffff;
+	font-size: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	width: 160px;
+	height: 138px;
+	display: none;
+}
+
+.item:hover .details {
+	display: block;
+}
+
+.items-list .item:hover {
+	box-shadow: 1px 1px 5px 3px #c5c0c0;
+	border-top: 30px solid #797979;
+	transition: all 0.5s;
+}
+
+.details header {
+	margin-bottom: 15px;
+
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+	text-align: center;	
+}
+
+.details p {
+	margin: 0;
+	margin-bottom: 28px;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.item:nth-of-type(4) .details p {
+	margin-bottom: 12px;
+}
+
+.item:nth-of-type(4) .details header {
+	margin-bottom: 8px;
+}
+
+.details .btn {
+	margin-right: 0;
+	margin-left: 10px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 500;
+	color: #ffffff;
+	padding: 10px 38px;
+}
+
+.details .btn:hover {
+	background-color: #d6494d;
+	transition: all 0.5s;
+}
+
+.details .btn:active {
+	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+	background-color: #b63538;
+}
+/* ------------------------------------------------------------ */
 
 .paginator {
 	width: 285px;
+	margin-bottom: 80px;
+	font-size: 0;
 }
 
+.paginator a {
+	margin: 0;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	display: inline-block;
+
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #000000;
+
+	background-color: #f1f1f1;
+	
+
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: top;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+.paginator a.current {
+	background-color: #ffffff;
+	border: 2px solid #f1f1f1;
+	padding: 8px 13px;
+}
+
+.paginator a.next {
+	margin-right: 0;
+}
+
+.paginator a:hover {
+	background-color: #e5e5e5;
+}
+
+.paginator a.current:hover,
+.paginator a:disabled:hover {
+	background-color: #ffffff;
+}
+
+.paginator a:active {
+	background-color: #d5d5d5;
+	box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.paginator a.current:active {
+	background-color: #ffffff;
+	box-shadow: none;
+}
 
 .map {
-	
 	background: url('img/map.png') no-repeat center center;
 	background-size: cover;
 	padding-top: 88px;
@@ -747,8 +932,6 @@ input[type="checkbox"]:disabled:checked + label::before {
 }
 
 .btn {
-	display: inline-block;
-	margin-right: 150px;
 	padding: 11px 65px;
 
 	font-weight: 500;
@@ -766,4 +949,6 @@ input[type="checkbox"]:disabled:checked + label::before {
 	border: none;
 	outline: none;
 	cursor: pointer;
+	margin-right: 150px;
+	display: inline-block;
 }
