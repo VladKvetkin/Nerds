@@ -26,7 +26,7 @@
 					</div>
 				</div>
 				<div class="header-2 slider clearfix">
-					<input type="radio" id="slide-1" name="toggle">
+					<input type="radio" id="slide-1" name="toggle" checked>
 					<input type="radio" id="slide-2" name="toggle">
 					<input type="radio" id="slide-3" name="toggle">
 					<div class="slider-inner">
@@ -153,5 +153,26 @@
 				</section>
 			</div>
 		</footer>
+		<div class="modal-content">
+			<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+			<form class="send-email" action="#" method="post">
+				<label class="label-name">Ваше имя:<br><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
+				<label class="label-email">Ваш e-mail:<br><input type="text" name="email" placeholder="Для отправки ответа"></label>
+				<label class="label-text-email">Текст письма:<br><textarea name="text-email" placeholder="В свободной форме"></textarea></label>
+				<button class="btn" type="submit" name="send">Отправить</button>
+			</form>
+		</div>
+		<script>
+			var sendEmail = document.querySelector(".contacts .btn");
+			var popup = document.querySelector(".modal-content");
+			sendEmail.addEventListener("click", function(event) {
+				event.preventDefault();
+				popup.classList.add("modal-content-show");
+			});
+			var closePopup = document.querySelector(".modal-content-close");
+			closePopup.addEventListener("click", function(event) {					
+				popup.classList.remove("modal-content-show");
+			});
+		</script>
 	</body>
 </html>
