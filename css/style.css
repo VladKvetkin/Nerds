@@ -2,12 +2,13 @@ body {
 	min-width: 1000px;
 	margin: 0;
 
+	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
-	font-family: "Roboto", "Arial", sans-serif;
+	
+	
 	color: #283136;
-
 	background-color: #ffffff;
 }
 
@@ -15,7 +16,6 @@ body {
 	margin-bottom: 80px;
 
 	color: #283136;
-
 	background-color: #eeeeee;
 }
 
@@ -68,9 +68,9 @@ body {
 	margin: 0;
 	padding: 0;
 
-	list-style: none;
-
 	font-size: 0;
+
+	list-style: none;
 }
 
 .main-navigation li {
@@ -79,8 +79,7 @@ body {
 	font-size: 14px;
 	line-height: 30px;
 	vertical-align: top;
-
-	text-transform: uppercase;
+	text-transform: uppercase;	
 }
 
 .main-navigation a {
@@ -89,8 +88,9 @@ body {
 	display: block;
 	padding: 55px 23px 10px 23px;
 
-	color: #000000;
 	text-decoration: none;
+
+	color: #000000;
 }
 
 .main-navigation a:hover {
@@ -102,8 +102,10 @@ body {
 }
 
 .main-navigation a.active::after {
-	display: block;
 	content: "";
+
+	display: block;
+	
 	border-bottom: 2px solid #fb565a;	
 }
 
@@ -123,6 +125,7 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	vertical-align: top;
+
 	color: #000000;
 }
 
@@ -140,11 +143,11 @@ body {
 	left: 6px;
 	top: 60px;
 
-	background: transparent url("../img/icon-cart-sprite.png") no-repeat -1px 0;
-	opacity: 0.3;
-
 	width: 15px;
 	height: 15px;
+
+	background: transparent url("../img/icon-cart-sprite.png") no-repeat -1px 0;
+	opacity: 0.3;
 }
 
 .cart:hover::before {
@@ -157,19 +160,11 @@ body {
 	background: transparent url("../img/icon-cart-sprite.png") no-repeat;
 }
 
-
-/* ДЛЯ ЭТОГО ПРАВИЛА НУЖНО СДЕЛАТЬ НИЖНЮЮ РАМКУ ВМЕСТЕ С ПСЕВДОЭЛЕМЕТОМ
-.cart.active::after {
-	display: block;
-	content: "";
-	border-bottom: 2px solid #fb565a;	
-
-}*/
-
 /* СЛАЙДЕР */
 
 .header-2 {
 	position: relative;
+
 	margin-bottom: 80px;
 }
 
@@ -184,6 +179,7 @@ body {
 
 .slider-slides {
 	width: 300%;
+
 	transition: transform 0.8s ease;
 }
 
@@ -205,10 +201,11 @@ body {
     width: 10px;
     height: 10px;
     margin: 0 3px;
-    cursor: pointer;
+   
     border-radius: 50%;
     border: 3px solid #ffffff;
     background-color: #ffffff;
+    cursor: pointer;
 }
 
 #slide-1:checked ~ .slider-controls label[for="slide-1"] { 
@@ -248,8 +245,8 @@ body {
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: top;
-	color: #ffffff;
 
+	color: #ffffff;
 	border-radius: 5px;
 	background-color: #fb565a;
 	border: none;
@@ -267,9 +264,10 @@ body {
 	display: block;
 	margin-bottom: 14px;
 
-	color: #000000;
 	font-size: 36px;
 	line-height: 46px;
+
+	color: #000000;	
 }
 
 .slide-title p {
@@ -278,6 +276,7 @@ body {
 
 	font-size: 16px;
 	line-height: 22px;
+
 	color: #283136;
 }
 
@@ -336,12 +335,13 @@ body {
 
 .header-title {
 	margin: 10px;
-	text-align: center;
-
+	
 	font-size: 40px;
+	font-weight: 500;
 	line-height: 50px;
 	text-transform: uppercase;
-	font-weight: 500;
+	text-align: center;
+	
 	color: #000000;
 }
 
@@ -353,9 +353,10 @@ body {
 }
 
 .filters fieldset {
-	border: none;
 	margin: 0;
 	padding: 0;
+
+	border: none;
 }
 
 .filters .cost {
@@ -366,20 +367,23 @@ body {
 	margin: 0;
 	margin-bottom: 17px;
 	padding: 0;
-	border: none;
-
+	
 	font-size: 18px;
 	line-height: 30px;
 	text-transform: uppercase;
+
+	border: none;
 	color: #000000;
 }
 
 .cost-range {
 	position: relative;
-	background-color: #f1f1f1;
+
 	padding: 30px 20px;
-	border-radius: 5px;
 	margin-bottom: 20px;
+
+	background-color: #f1f1f1;
+	border-radius: 5px;
 }
 
 .cost-range input[type="range"] {
@@ -387,15 +391,18 @@ body {
 }
 
 .min-range {
-	display: inline-block;
-	
-	z-index: 1;
 	position: absolute;
 	left: 10px;
 	bottom: 28px;
+	z-index: 1;
+
+	display: inline-block;
 	width: 20px;
 	height: 20px;
 	margin-right: 100px;
+
+	vertical-align: top;
+
 	border-radius: 10px;
 	background-color: #ffffff;
 	box-shadow: 0 2px rgba(0, 1, 1, 0.14);
@@ -404,30 +411,37 @@ body {
 .min-range::before {
 	content: "";
 	position: absolute;
-	width: 4px;
-	height: 4px;
 	left: 8px;
 	top: 8px;
+
+	width: 4px;
+	height: 4px;
+	
 	border-radius: 2px;
 	background: #ababab;
 }
 
 .input-range {
 	position: relative;
+
 	display: inline-block;
 	width: 200px;
 	height: 2px;
+
 	background: linear-gradient(to right, #00ca74 65%, #d7dcde 65% , #d7dcde 35%);
 }
 
-.max-range {
-	display: inline-block;
-	z-index: 1;
+.max-range {	
+	position: absolute;
 	right: 80px;
 	bottom: 28px;
-	position: absolute;
+	z-index: 1;
+
+	display: inline-block;
 	width: 20px;
 	height: 20px;
+
+	vertical-align: top;
 	border-radius: 10px;
 	background-color: #ffffff;
 	box-shadow: 0 2px rgba(0, 1, 1, 0.14);
@@ -436,28 +450,31 @@ body {
 .max-range::before {
 	content: "";
 	position: absolute;
-	width: 4px;
-	height: 4px;
 	left: 8px;
 	top: 8px;
+
+	width: 4px;
+	height: 4px;
+	
 	border-radius: 2px;
 	background: #ababab;
 }
 
-.cost p, .cost output {
+.cost p, 
+.cost output {
 	margin: 0;
+
 	font-size: 16px;
 	line-height: 22px;
+
 	color: #283136;
 }
 
 .cost output {
+	padding: 10px 36px 10px 36px;
+
 	background: #f1f1f1;
 	border-radius: 5px;
-	padding-left: 36px;
-	padding-right: 36px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 .cost output:first-of-type {
@@ -468,8 +485,6 @@ body {
 .cost output:last-of-type {
 	padding-left: 18px;
 	padding-right: 18px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	margin-left: 10px;
 }
 
@@ -480,13 +495,15 @@ body {
 .grid .grid-radio-list {
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
 
 .grid-radio-list li {
 	display: block;
-	line-height: 20px;
 	margin-bottom: 20px;
+
+	line-height: 20px;
 }
 
 .grid-radio-list li:last-of-type {
@@ -502,14 +519,17 @@ body {
 
 .inner-page input[type="radio"] + label::before {
 	content: "";
+
 	display: inline-block;
 	width: 9px;
     height: 9px;
     margin-right: 10px;
+
+	vertical-align: middle;
+
     border: 4px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #c1c1c1;
-    vertical-align: middle;
 }
 
 .inner-page input[type="radio"] + label:hover {
@@ -521,8 +541,9 @@ body {
 }
 
 .inner-page input[type="radio"]:checked + label::before {
-	transition: background-color 0.5s;
 	background-color: #c1c1c1;
+
+	transition: background-color 0.5s;
 }
 
 .inner-page input[type="radio"]:checked + label:hover::before {
@@ -545,7 +566,6 @@ body {
 
 /* ------------------------------------------------------------ */
 
-
 /* СТИЛИ ДЛЯ ЧЕКБОКСОВ */
 /* ------------------------------------------------------------ */
 
@@ -556,15 +576,18 @@ body {
 .features .grid-features-list {
 	margin: 0;
 	padding: 0;
+
 	font-size: 0;
+
 	list-style: none;
 }
 
 .grid-features-list li {
 	display: block;
+	margin-bottom: 24px;
+
 	font-size: 16px;
 	line-height: 20px;
-	margin-bottom: 24px;
 }
 
 .grid-features-list li:last-of-type {
@@ -577,14 +600,17 @@ body {
 
 .inner-page input[type="checkbox"] + label::before {
 	content: "";
+	
 	display: inline-block;
 	height: 9px;
+	width: 9px;
 	margin-right: 12px;
+
+	vertical-align: middle;
+
+	border: 4px solid #ffffff;
 	border-radius: 1%;
 	box-shadow: 0 0 0 3px #c1c1c1;
-	vertical-align: middle;
-	width: 9px;
-	border: 4px solid #ffffff;
 }
 
 .inner-page input[type="checkbox"] + label:hover::before {
@@ -605,9 +631,12 @@ body {
 
 .inner-page input[type="checkbox"]:checked + label::before {
 	content: "\2714";
-	color: #c1c1c1;
+	
 	font-size: 30px;
 	line-height: 1px;
+
+	color: #c1c1c1;
+
 	transition: content 0.5s,		
 				font-size 0.5s,
 				line-height 0.5s;
@@ -630,12 +659,8 @@ body {
 	padding: 12px 46px 12px 46px;
 	margin: 0;
 	margin-bottom: 10px;
-	border: none;
-	outline: none;
-	border-radius: 5px;
-
+	
 	font-family: "Roboto", "Arial", sans-serif;
-	color: #283136;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 18px;
@@ -644,7 +669,12 @@ body {
 	text-transform: uppercase;
 
 	background-color: #f1f1f1;
-	cursor: pointer;
+	color: #283136;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;	
 }
 
 .filters button:hover {
@@ -672,13 +702,13 @@ body {
 
 .sort-title {
 	display: inline-block;
-	vertical-align: middle;
 	margin: 0;
 	padding: 0;
 
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 500;
+	vertical-align: top;
 	text-transform: uppercase;
 }
 
@@ -687,30 +717,38 @@ body {
 	margin: 0;
 	padding: 0;
 
+	vertical-align: top;
+
 	list-style: none;
 }
 
 .sort-list li {
 	display: inline-block;
+
+	vertical-align: top;
 }
 
 .sort-list .sort-type {
 	display: block;
 	margin-right: 45px;
 	margin-left: 40px;
-	border-bottom: 1px dotted #00ca74;
+	
 
 	font-size: 12px;
 	line-height: 18px;
-	color: #dadada;
+	
 	text-transform: uppercase;
 	text-decoration: none;
-	vertical-align: middle;
+	vertical-align: top;
+
+	border-bottom: 1px dotted #00ca74;
+	color: #dadada;
 }
 
 .sort-list .sort-type:hover {
 	border-bottom: 1px solid #00ca74;
 	color: #444444;
+
 	transition: all 0.5s;
 }
 
@@ -725,6 +763,8 @@ body {
 
 .sort span {
 	display: inline-block;
+
+	vertical-align: middle;
 }
 
 .sort .arrow-up {
@@ -735,11 +775,12 @@ body {
 .sort .arrow {
 	width: 0;
 	height: 0;
+
+	border: 10px solid #ffffff;
 	border-right-color: transparent;
 	border-left-color: transparent;
 	border-left-width: 5px;
 	border-right-width: 5px;
-	border: 10px solid #ffffff;
 }
 
 .arrow.arrow-up {
@@ -769,7 +810,6 @@ body {
 }
 /* ------------------------------------------------------------ */
 
-
 /* СПИСОК ТОВАРОВ */
 /* ------------------------------------------------------------ */
 .items-list {
@@ -779,24 +819,28 @@ body {
 .item::before {
 	content: "";
 	position: absolute;
-	width: 44px;
-	height: 10px;
 	top: -20px;
 	left: 10px;
+
+	width: 44px;
+	height: 10px;
+	
 	background: url('../img/dots.png') no-repeat;
 }
 
 
 .item {
 	position: relative;
+
+	float: left;
 	width: 200px;
 	height: 200px;
 	padding: 20px;
-	border-top: 30px solid #f1f1f1;
-	border-radius: 5px;
 	margin-right: 80px;
 	margin-bottom: 80px;
-	float: left;
+
+	border-top: 30px solid #f1f1f1;
+	border-radius: 5px;	
 }
 
 .item:nth-of-type(2n) {
@@ -842,15 +886,14 @@ body {
 }
 
 .details {
-	padding-top: 32px;
-	padding-bottom: 30px;
-	background-color: #ffffff;
-	font-size: 0;
-	padding-right: 20px;
-	padding-left: 20px;
+	display: none;
 	width: 160px;
 	height: 138px;
-	display: none;
+	padding: 32px 20px 30px 20px;
+
+	font-size: 0;
+
+	background-color: #ffffff;	
 }
 
 .item:hover .details {
@@ -860,6 +903,7 @@ body {
 .items-list .item:hover {
 	box-shadow: 1px 1px 5px 3px #c5c0c0;
 	border-top: 30px solid #797979;
+
 	transition: all 0.5s;
 }
 
@@ -869,14 +913,16 @@ body {
 	font-size: 18px;
 	line-height: 28px;
 	font-weight: 500;
-	color: #000000;
 	text-transform: uppercase;
 	text-align: center;	
+
+	color: #000000;
 }
 
 .details p {
 	margin: 0;
 	margin-bottom: 28px;
+
 	font-size: 14px;
 	line-height: 18px;
 	text-align: center;
@@ -893,15 +939,18 @@ body {
 .details .btn {
 	margin-right: 0;
 	margin-left: 10px;
+	padding: 10px 38px;
+
 	font-size: 18px;
 	line-height: 22px;
 	font-weight: 500;
+
 	color: #ffffff;
-	padding: 10px 38px;
 }
 
 .details .btn:hover {
 	background-color: #d6494d;
+
 	transition: all 0.5s;
 }
 
@@ -914,40 +963,37 @@ body {
 .paginator {
 	width: 285px;
 	margin-bottom: 80px;
+
 	font-size: 0;
 }
 
 .paginator a {
+	display: inline-block;
 	margin: 0;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-	padding-right: 15px;
-	display: inline-block;
+	padding: 10px 15px 10px 15px;	
 
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: 500;
-	color: #000000;
-
-	background-color: #f1f1f1;
-	
-
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: top;
+
+	background-color: #f1f1f1;
+	color: #000000;
 	border-radius: 2px;
 	outline: none;
 	cursor: pointer;
 }
 
 .paginator a.current {
+	padding: 8px 13px;
+
 	background-color: #ffffff;
 	border: 2px solid #f1f1f1;
-	padding: 8px 13px;
 }
 
 .paginator a.next {
@@ -976,13 +1022,14 @@ body {
 .services {
 	margin-bottom: 60px;
 	padding-bottom: 80px;
+
 	border-bottom: 2px solid #eeeeee;
 }
 
 .services-item {
 	float: left;
-	margin-right: 80px;
 	width: 240px;
+	margin-right: 80px;
 }
 
 .services-item:last-child {
@@ -1005,17 +1052,19 @@ body {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 500;
-	color: #000000;
 	text-transform: uppercase;
+
+	color: #000000;
 }
 
 .services-item p {
 	margin: 0;
 	margin-bottom: 26px;
 
-	color: #283136;
 	font-size: 15px;
 	line-height: 22px;
+
+	color: #283136;
 }
 
 .services-item .btn {
@@ -1064,6 +1113,7 @@ body {
 
 .index-content {
 	padding-bottom: 70px;
+
 	border-bottom: 2px solid #eeeeee;
 }
 
@@ -1077,19 +1127,20 @@ body {
 	margin: 0;
 	margin-bottom: 25px;
 
-	color: #283136;
 	font-weight: 500;
 	font-size: 36px;
 	line-height: 46px;
+
+	color: #283136;
 }
 
 .content-description {
 	margin: 0;
 	margin-bottom: 46px;
 
-	color: #000000;
 	font-size: 16px;
 	line-height: 22px;
+
 	color: #283136;
 }
 
@@ -1099,16 +1150,19 @@ body {
 
 	font-size: 16px;
 	line-height: 22px;
-	color: #283136;
 	text-transform: uppercase;
+
+	color: #283136;
 }
 
 .index-content-list {
+	position: relative;
+
 	margin: 0;
 	padding: 0;
 	padding-left: 37px;
+
 	list-style: none;
-	position: relative;
 }
 
 .index-content-list li {
@@ -1117,16 +1171,18 @@ body {
 
 	font-size: 16px;
 	line-height: 22px;
+	vertical-align: top;
+
 	color: #283136;
 }
 
 .index-content-list li::before {
 	content: "";
-	width: 25px;
-	height: 2px;
-
 	position: absolute;
 	left: 0;
+	
+	width: 25px;
+	height: 2px;
 
 	background-color: #fb565a;
 }
@@ -1149,8 +1205,9 @@ body {
 
 	font-size: 16px;
 	line-height: 22px;
-	color: #283136;
 	text-transform: uppercase;
+
+	color: #283136;
 }
 
 .index-content-right {
@@ -1167,12 +1224,13 @@ body {
 	padding-left: 12px;
 	padding-right: 20px;
 	margin-bottom: 85px;
+
 	border-bottom: 2px solid #eeeeee;
 }
 
 .site {
-	width: 240px;
 	float: left;
+	width: 240px;
 	margin-right: 60px;
 }
 
@@ -1193,21 +1251,19 @@ body {
 }
 
 .map {
-	
-	background: url('../img/map.png') no-repeat center center;
-	background-size: cover;
 	padding-top: 88px;
 	padding-bottom: 88px;
+
+	background: url('../img/map.png') no-repeat center center;
+	background-size: cover;
 }
 
 .contacts {
-	width: 210px;
 	float: left;
+	width: 210px;
+	padding: 24px 20px 30px 20px;
+
 	background-color: #ffffff;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 30px;
-	padding-top: 24px;
 }
 
 .contacts .btn {
@@ -1229,17 +1285,20 @@ body {
 	margin-bottom: 16px;
 
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
-	font-weight: 500;
+	
 	color: #000000;
 }
 
 .contacts-address,
 .contacts-tel {
 	margin: 0;
+
 	font-size: 16px;
 	line-height: 20px;
+
 	color: #666666;
 }
 
@@ -1267,6 +1326,9 @@ body {
 	margin-right: 27px;
 	width: 62px;
 	min-height: 62px;
+
+	vertical-align: middle;
+
 	border-radius: 30px;
 	background-color: #e1e1e1;
 }
@@ -1274,7 +1336,6 @@ body {
 .footer-social a:last-child {
 	margin-right: 0;
 }
-
 
 .footer-promo {
 	float: right;
@@ -1301,12 +1362,14 @@ body {
 }
 
 .site a:hover img {
-	transition: opacity 0.5s ease;
 	opacity: 1;
+
+	transition: opacity 0.5s ease;
 }
 
 .footer-social a:hover {
 	background-color: #fb565a;
+
 	transition: all 0.5s ease;
 }
 
@@ -1342,10 +1405,7 @@ body {
 	display: none;
 	width: 460px;
 	height: 310px;
-	padding-left: 80px;
-	padding-right: 90px;
-	padding-top: 55px;
-	padding-bottom: 50px;
+	padding: 55px 90px 50px 80px;
 	margin-left: -330px;
 
 	color: #000000;
@@ -1365,10 +1425,8 @@ body {
 
 	font-size: 0;
 
-
 	background-color: #fb565a;
 	border-radius: 50%;
-
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -1410,27 +1468,26 @@ body {
 
 	font-size: 16px;
 	line-height: 18px;
+	vertical-align: top;
+
 	color: #000000;
 }
 
 .label-name input[type="text"],
 .label-email input[type="text"],
 .send-email textarea {
-	padding: 0;
-	border: 0;
+	width: 186px;
 	margin: 0;
 	margin-top: 12px;
-	width: 186px;
 	padding: 10px 15px;
 
-	
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 18px;
-	font-family: "Roboto", "Arial", sans-serif;
 	text-transform: uppercase;
+	
 	color: #000000;
-
 	border: 2px solid #d7dcde;
 	border-radius: 2px;
 	outline: none;
@@ -1461,12 +1518,23 @@ body {
 .send-email textarea {
 	width: 426px;
 	height: 90px;
+	
 	border: 2px solid #d7dcde;
+
 	resize: none;
 }
 
 .send-email .btn {
 	width: 100%;
+}
+
+.send-email .btn:hover {
+	background-color: #d6494d;
+}
+
+.send-email .btn:active {
+	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
+	background-color: #b63538;
 }
 
 .modal-content-show {
